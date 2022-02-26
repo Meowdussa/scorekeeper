@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Score Keeper</title>
     <style>
         .winner{
@@ -15,7 +16,51 @@
     </style>
 </head>
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://i.pinimg.com/564x/5a/04/d1/5a04d1a8291c1e1f898bffe2d6d941af.jpg">
+                        </figure>                
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Card Game Score Keeper
+                      </p>
+                      
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="is-size-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                        <p class="class subtitle">Use the buttons below to keep score</p>
+
+                        <label for="playto" class="label is-large is-inline">Playing To</label>
+                        <div class="select is-rounded">
+                            <select id="playto">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button is-primary card-footer-item">+ 1 Player 1</button>
+                        <button id="p2Button" class="button is-link card-footer-item">+1 Player 2</button>
+                        <button id="reset" class="button is-danger card-footer-item">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
 
     <select id="playto">
         <option value="3">3</option>
@@ -25,10 +70,7 @@
         <option value="7">7</option>
     </select>
 
-    <button id="p1Button">Player 1</button>
-    <button id="p2Button">Player 2</button>
-    <button id="reset">Reset</button>
-
+   
     <script src="app.js"></script>
 </body>
-</html>z
+</html>
